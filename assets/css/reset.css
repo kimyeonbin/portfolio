@@ -1,0 +1,38 @@
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:auto;overflow-wrap:break-word;word-break:break-word;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+ul{list-style: none;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+body{
+    background: #fff;
+    font-family: 'MaruBuri';
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+/*track*/
+::-webkit-scrollbar-track {
+    background: transparent;
+    position: fixed;
+    margin-right: 10px;
+}
+/*thumb*/
+::-webkit-scrollbar-thumb {
+    position: fixed;
+    border-width: 10px;
+    border-style: solid;
+    right: 10px;
+    /* border-radius: 100px; */
+    color: rgb(199, 199, 199);
+}

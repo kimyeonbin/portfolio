@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'MaruBuri';
+    src: url('../fonts/MaruBuri-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'RoslindaleText';
+    src: url('../fonts/RoslindaleText-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('../fonts/NanumSquareNeo-bRg.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'MapoDacapo';
+    src: url('../fonts/MapoDacapo.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'HerrVonMuellerhoff';
+    src: url('../fonts/HerrVonMuellerhoff-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'EmblemaOne';
+    src: url('../fonts/EmblemaOne-Regular.woff2') format('woff2');
+    font-weight: 400;
+}

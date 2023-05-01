@@ -1,0 +1,188 @@
+@import './fonts.css';
+@import './reset.css';
+@import './common.css';
+
+.inner1{
+    display: flex;
+    background: #fdeaf6;
+}
+.inner2{
+    flex: 1;
+}
+
+
+.progress-box{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+}
+.progress-bar{
+    height: 10px;
+    width: 0%;
+    background: #333;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid #333;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    font-weight: 800;
+    font-size: 19px;
+    width: 90px;
+    z-index: 10;
+}
+.header .link-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'HerrVonMuellerhoff';
+    transition: color .3s;
+}
+.header .ic-logo{
+    display: block;
+    width: 56px;
+    height: 80px;
+    margin-right: -8px;
+    background: url('../images/ic-logo.png') no-repeat center / cover;
+}
+
+
+.gnb{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 2vw;
+    padding-right: 4vw;
+}
+.gnb .nav-list{
+    display: flex;
+    gap: 1.5vw;
+}
+.gnb button{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+.footer{
+    position: relative;
+    display: flex;
+    gap: 100px;
+    background: #fff;
+    padding: 70px 70px 80px 70px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.footer .sc-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer .sc-contact .headline{
+    display: block;
+    font-family: 'SFProDisplay';
+    font-size: 80px;
+}
+.footer .sc-contact .info-area{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.footer .sc-contact .contact-area{
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    font-size: 16px;
+}
+.footer .sc-contact .contact-area a{
+    padding: 10px;
+    border-radius: 15px;
+    background: #f5e8ea;
+    transition: .27s;
+}
+.footer .sc-contact .contact-area a:hover{
+    background: #434343;
+    color: #fff;
+}
+.footer .sc-contact .contact-area a:hover span{
+    color: rgb(90, 216, 90);
+}
+.footer .sc-contact .contact-area span{
+    font-size: 22px;
+    font-weight: 700;
+    color: #872d71;
+    transition: .27s;
+}
+.footer .illu.bird{
+    position: absolute;
+    right: -45px;
+    bottom: 50px;
+    width: 75px;
+    height: 75px;
+}
+.footer .illu.flower{
+    position: absolute;
+    right: 85px;
+    bottom: 65px;
+    width: 120px;
+    height: 180px;
+}
+.footer .illu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer .copy{
+    position: absolute;
+    right: 30px;
+    bottom:30px;
+}
+
+
+.fix-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fix-btn .btn-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 64px;
+    border: 1px solid #333;
+    background: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(500px);
+}
+.fix-btn .btn-top::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 19px;
+    background: url('../images/ic-arrow-up.svg') no-repeat 0 0 / 16px 19px;
+    content: '';
+}
+.fix-btn .btn-top.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
