@@ -1,25 +1,20 @@
 $(function(){
-    $(window).on('load', function(){
-        mainScript.gsapLoad();
-      })
-      
-    const mainScript = {
-        gsapLoad: function(){
-            gsap.set('.sc-visual .desc', {
-                rotateX: 90,
-                skewY: 15,
-                rotateY: 15,
-                opacity: 0,
-            })
-            gsap.to('.sc-visual .desc', {
-                rotateX: 0,
-                skewY: 0,
-                rotateY: 0,
-                opacity: 1,
-                stagger: 0.4,
-            })
-        }
-    }
+    /**
+     * @비주얼텍스트_나타남
+     */
+    gsap.set('.sc-visual .desc', {
+        rotateX: 90,
+        skewY: 15,
+        rotateY: 15,
+        opacity: 0,
+    })
+    gsap.to('.sc-visual .desc', {
+        rotateX: 0,
+        skewY: 0,
+        rotateY: 0,
+        opacity: 1,
+        stagger: 0.4,
+    })
     /**
      * @커서
      */
