@@ -19,11 +19,6 @@
     font-weight: 700;
 }
 @font-face {
-    font-family: 'NanumSquareNeo';
-    src: url('../fonts/NanumSquareNeo-bRg.woff2') format('woff2');
-    font-weight: 400;
-}
-@font-face {
     font-family: 'MapoDacapo';
     src: url('../fonts/MapoDacapo.woff2') format('woff2');
     font-weight: 400;
@@ -79,17 +74,17 @@
     font-weight: 500;
 }
 @font-face {
-    font-family: 'Zephyr';
-    src: url('../fonts/Zephyr-Regular.woff') format('woff');
+    font-family: 'AllertaStencil';
+    src: url('../fonts/AllertaStencil-Regular.woff2') format('woff2');
     font-weight: 400;
 }
 @font-face {
-    font-family: 'SCDream';
-    src: url('../fonts/SCDream-Regular.woff2') format('woff2');
+    font-family: 'CinzelDecorative';
+    src: url('../fonts/CinzelDecorative-Regular.woff') format('woff');
     font-weight: 400;
 }
 @font-face {
-    font-family: 'SCDream';
-    src: url('../fonts/SCDream-Medium.woff2') format('woff2');
-    font-weight: 500;
+    font-family: 'RoslindaleText';
+    src: url('../fonts/RoslindaleText-Regular.woff2') format('woff2');
+    font-weight: 400;
 }

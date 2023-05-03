@@ -6,10 +6,11 @@
 }
 .sc-visual{
     padding-top: 95px;
-    font-weight: 700;
+    font-family: 'AllertaStencil';
     font-size: 130px;
+    font-weight: 700;
     /* font-family: 'SFProDisplay'; */
-    font-family: 'Cako';
+    /* font-family: 'Cako'; */
     /* font-family: 'Cardo'; */
     /* font-style: italic; */
     /* text-transform: uppercase; */
@@ -17,17 +18,20 @@
 }
 .sc-visual .desc{
     display: block;
+    letter-spacing: -3px;
 }
-
 .sc-visual .desc+.desc{
-    margin-top: -20px;
+    margin-top: -15px;
 }
 .sc-visual .strong{
-    font-family: 'EmblemaOne';
-    color: #000;
+    font-weight: 400;
+    font-family: 'CinzelDecorative';
+    color: #0064df;
+    /* -webkit-text-stroke: 3px #000; */
+    letter-spacing: normal;
 }
 .sc-about{
-    padding: 80px 0 120px 60%;
+    padding: 80px 0 80px 60%;
 }
 .sc-about .desc{
     font-size: 19px;

@@ -12,6 +12,7 @@ $(function(){
         rotateX: 0,
         skewY: 0,
         rotateY: 0,
+        // width:`100%`,
         opacity: 1,
         stagger: 0.43,
     })
