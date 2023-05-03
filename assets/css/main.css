@@ -1,31 +1,40 @@
 .container{
-    padding: 0 3.7vw;
+    padding: 0 4vw;
     max-width: 2000px;
     margin: 0 auto;
+    background: #fff;
 }
 .sc-visual{
     padding-top: 95px;
     font-weight: 700;
     font-size: 130px;
-    font-family: 'SFProDisplay';
-    text-transform: uppercase;
+    /* font-family: 'SFProDisplay'; */
+    font-family: 'Cako';
+    /* font-family: 'Cardo'; */
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
+    color: #0064df;
 }
 .sc-visual .desc{
-    display: inline-block;
+    display: block;
+}
+
+.sc-visual .desc+.desc{
+    margin-top: -20px;
 }
 .sc-visual .strong{
     font-family: 'EmblemaOne';
-    color: #c43477;
-    /* color: rgb(252, 192, 219); */
-    /* -webkit-text-stroke: 3px #f599c4; */
+    color: #000;
 }
 .sc-about{
-    padding: 80px 0 50px 55%;
+    padding: 80px 0 120px 60%;
 }
 .sc-about .desc{
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 19px;
+    /* line-height: 1.5; */
     word-break: keep-all; 
+    font-weight: 500;
+    color: #0064df;
 }
 .sc-about p+p{
     margin-top: 15px;
@@ -34,16 +43,16 @@
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 700;
-    color: #ab378e;
-    text-transform: uppercase;
+    color: #0064df;
+    font-family: 'Cako';
 }
 .sc-work .work-item{
     display: flex;
     align-items: center;
-    margin-bottom: 12vh;
-    gap: 5vw;
+    padding-bottom: 12vh;
+    gap: 3vw;
 }
 .sc-work .work-item:nth-child(2n){
     flex-direction: row-reverse;
@@ -51,27 +60,29 @@
 }
 .sc-work .work-item .thumb-area{
     position: relative;
-    width: 42%;
+    width: 43%;
     max-width: 686px;
-    padding-bottom: 52%;
+    padding-bottom: 57%;
     overflow: hidden;
+    /* background: rgba(0, 0, 0, .2); */
 }
 .sc-work .work-item .thumb-area:hover::before{
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1; */
+    /* visibility: visible; */
+    background: rgba(0, 0, 0, .35);
 }
 .sc-work .work-item .thumb-area::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-bottom: 52%;
-    background: rgba(0, 0, 0, .35);
-    visibility: hidden;
-    opacity: 0;
+    /* padding-bottom: 55%; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
     pointer-events: none;
+    background: rgba(0, 0, 0, .05);
     z-index: 10;
     content: '';
-    transition: .4s;
+    transition: .3s;
 }
 .sc-work .work-item .thumb-area .link-more{
     display: block;
@@ -99,50 +110,67 @@
     width: 55%;
     max-width: 750px;
 }
+.sc-work .work-item .num{
+    font-size: 40px;
+    font-family: 'FleurDeLeah';
+    color: #0064df;
+}
 .sc-work .work-item .title{
-    margin-bottom: 20px;
-    font-size: 110px;
+    margin-bottom: 30px;
+    font-size: 105px;
     font-weight: 400;
-    transition: .3s;
-    font-family: 'RoslindaleText';
+    line-height: .95;
+    letter-spacing: -4.2px;
+    color: #0064df;
+    /* transition: .3s; */
+    /* color: #0064df; */
+    /* font-family: 'RoslindaleText'; */
+    /* font-family: 'Cardo'; */
+    /* font-family: 'Zephyr'; */
+    font-family: 'Cako';
     text-transform: uppercase;
-    line-height: 1.1;
 }
 .sc-work .work-item .desc-box{
     width: 85%;
     margin-bottom: 25px;
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 19px;
+    /* line-height: 1.5; */
+    color: #0064df;
+    font-weight: 500;
     word-break: keep-all;
 }
 .sc-work .work-item .desc+.desc{
-    padding-top: 20px;
+    padding-top: 13px;
 }
 .sc-work .work-item .keyword-box{
     display: flex;
     gap: 1.6vw;
     margin-bottom: 25px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #ab378e;
+    font-family: 'MaruBuri';
+    font-size: 16px;
+    /* font-weight: 700; */
+    color: #0064df;
     text-transform: uppercase;
 }
 .sc-work .more-box{
     display: flex;
     gap: 15px;
-    font-size: 17px;
+    font-family: 'Cardo';
+    font-size: 13px;
     text-transform: uppercase;
 }
 .sc-work .more-box a{
     position: relative;
     display: inline-block;
     transition: .27s;
-    border: 1.8px solid #9c7091;
-    border-radius: 30px;
-    padding: 10px;
+    /* border: 1.8px solid #9c7091; */
+    background: #0064df;
+    color: #fff;
+    border-radius: 50px;
+    padding: 9px 17px 7.5px 17px;
 }
 .sc-work .more-box a:hover{
     /* background: rgb(172, 122, 169); */
-    background: rgb(216, 124, 171);
-    color: #fff;
+    background: #d6eeff;
+    color: #0064df;
 }

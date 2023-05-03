@@ -2,37 +2,43 @@
 *, :after, :before {box-sizing:border-box;flex-shrink:0;}
 :root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:auto;overflow-wrap:break-word;word-break:break-word;tab-size:4}
 html, body {height:100%;}
-img, picture, video, canvas, svg {display: block;max-width:100%;}
-button {background:none;border:0;cursor:pointer;}
+img, picture, video, canvas, svg {display:block;max-width:100%;}
+button {background:none;cursor:pointer;border:0;}
 ul{list-style: none;}
-a {text-decoration:none}
+a {text-decoration:none;}
 table {border-collapse:collapse;border-spacing:0}
 body{
-    background: #fff;
-    font-family: 'MaruBuri';
+    background: #f2f2f2;
+    font-family: 'Pretendard';
     font-size: 14px;
     line-height: 1.4;
     color: #000;
-    overflow: overlay;
+    /* overflow: overlay; */
     overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
-/*scrollbar*/
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+/* scrollbar
 ::-webkit-scrollbar {
     background: transparent;
-    width: 10px;
+    width: 8px;
 }
 /*track*/
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: transparent;
     position: fixed;
-    margin-right: 10px;
-}
+    margin-right: 8px;
+} */
 /*thumb*/
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     position: fixed;
-    border-width: 10px;
+    border-width: 8px;
     border-style: solid;
-    right: 10px;
-    /* border-radius: 100px; */
-    color: rgb(199, 199, 199);
-}
+    border-radius: 8px;
+    right: 8px;
+    border-radius: 100px;
+    color: rgb(181, 223, 237);
+} */

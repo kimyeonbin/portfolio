@@ -3,6 +3,11 @@
     src: url('../fonts/MaruBuri-Regular.woff2') format('woff2');
     font-weight: 400;
 }
+/* @font-face {
+    font-family: 'GowunBatang';
+    src: url('../fonts/GowunBatang-Regular.woff') format('woff');
+    font-weight: 400;
+} */
 @font-face {
     font-family: 'RoslindaleText';
     src: url('../fonts/RoslindaleText-Regular.woff2') format('woff2');
@@ -32,4 +37,59 @@
     font-family: 'EmblemaOne';
     src: url('../fonts/EmblemaOne-Regular.woff2') format('woff2');
     font-weight: 400;
+}
+@font-face {
+    font-family: 'FleurDeLeah';
+    src: url('../fonts/FleurDeLeah-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Cako';
+    src: url('../fonts/Cako-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo-Bold.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo-Italic.woff2') format('woff2');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Zephyr';
+    src: url('../fonts/Zephyr-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SCDream';
+    src: url('../fonts/SCDream-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SCDream';
+    src: url('../fonts/SCDream-Medium.woff2') format('woff2');
+    font-weight: 500;
 }

@@ -5,7 +5,7 @@ $(function(){
     gsap.set('.sc-visual .desc', {
         rotateX: 90,
         skewY: 15,
-        rotateY: 15,
+        rotateY: 10,
         opacity: 0,
     })
     gsap.to('.sc-visual .desc', {
@@ -13,33 +13,64 @@ $(function(){
         skewY: 0,
         rotateY: 0,
         opacity: 1,
-        stagger: 0.4,
+        stagger: 0.43,
+    })
+    /**
+     * @어바웃텍스트_나타남
+     */
+    gsap.set('.sc-about .desc', {
+        opacity: 0
+    });
+    gsap.to('.sc-about .desc', {
+        opacity: 1,
+        delay: 1.7,
+        duration: .5
     })
     /**
      * @커서
      */
-    $('body').mousemove(function(e){
-        xVal = e.clientX;
-        yVal = e.clientY;
+    // $('body').mousemove(function(e){
+    //     xVal = e.clientX;
+    //     yVal = e.clientY;
+    //     gsap.to('.cursor',{
+    //       x:xVal,
+    //       y:yVal,
+    //     })
+    // })
+    $(window).mousemove(function(e){
+        e.preventDefault();
         gsap.to('.cursor',{
-          x:xVal,
-          y:yVal,
-        })
-    })
-    $('.sc-visual .desc').mouseover(function(){
-        gsap.to('.cursor',{scale:5})
-    })
+            x:e.clientX,
+            y:e.clientY,
+            duration:.2,
+        });
+    });
+    // $('.sc-visual .desc').mouseover(function(){
+    //     gsap.to('.cursor',{scale:5})
+    // })
     $('.gnb button').mouseover(function(){
         gsap.to('.cursor',{scale:3})
     })
-    $('.sc-visual .desc, .gnb button').mouseleave(function(){
+    $('.gnb button').mouseleave(function(){
         gsap.to('.cursor',{scale:1})
     })
-    $('.sc-work .thumb-area, .footer .contact-area a').mouseover(function(){
-        gsap.to('.cursor', {mixBlendMode: "normal"})
+    $('.footer .contact-area a').mouseover(function(){
+        gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4})
     })
-    $('.sc-work .thumb-area, .footer .contact-area a').mouseleave(function(){
-        gsap.to('.cursor', {mixBlendMode: "difference"})
+    $('.footer .contact-area a').mouseleave(function(){
+        gsap.to('.cursor', {mixBlendMode:"difference", scale:1})
+    })
+    $('.sc-work .thumb-area').mouseover(function(){
+        gsap.to('.cursor', {mixBlendMode:"normal"})
+    })
+    $('.sc-work .thumb-area').mouseleave(function(){
+        gsap.to('.cursor', {mixBlendMode:"difference"})
+    })
+    $('.sc-work .more-box a').mouseover(function(){
+        gsap.to('.cursor', {scale:0.4})
+    })
+    $('.sc-work .more-box a').mouseleave(function(){
+        gsap.to('.cursor', {scale:1})
     })
     /**
      * @gnb_버튼
