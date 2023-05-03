@@ -1,11 +1,41 @@
 .container{
+    position: relative;
     padding: 0 4vw;
     max-width: 2000px;
     margin: 0 auto;
     background: #fff;
 }
+.container .illu.flo1{
+    position: absolute;
+    top: 150px;
+    right: -40px;
+    width: 320px;
+    height: 300px;
+}
+.container .illu.flo2{
+    position: absolute;
+    top: 630px;
+    left: 0;
+    width: 300px;
+    height: 310px;
+}
+.container .illu.flo3{
+    position: absolute;
+    top: 0;
+    right: 400px;
+    width: 70px;
+    height: 160px;
+}
+.container .illu.flo4{
+    position: absolute;
+    top: 500px;
+    right: -120px;
+    width: 210px;
+    height: 200px;
+}
 .sc-visual{
     padding-top: 95px;
+    padding-left: 50px;
     font-family: 'AllertaStencil';
     font-size: 130px;
     font-weight: 700;
@@ -56,7 +86,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 12vh;
-    gap: 3vw;
+    gap: 50px;
 }
 .sc-work .work-item:nth-child(2n){
     flex-direction: row-reverse;
@@ -70,6 +100,13 @@
     overflow: hidden;
     /* background: rgba(0, 0, 0, .2); */
 }
+/* .sc-work .work-item .thumb-area .illu{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 1000px;
+    height: 1000px;
+} */
 .sc-work .work-item .thumb-area:hover::before{
     /* opacity: 1; */
     /* visibility: visible; */
