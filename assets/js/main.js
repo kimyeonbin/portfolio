@@ -115,14 +115,15 @@ $(function(){
      * @상단이미지_움직임
      */
     gsap.from('.container .illu.flo1', {
-        xPercent: 110,
+        // xPercent: 110,
         duration: 1,
         scale: (1.3),
         delay: 3,
     });
     gsap.to('.container .illu.flo1', {
         duration: 1,
-        xPercent: 0,
+        // xPercent: 0,
+        right:-30,
         delay: 3,
     });
     gsap.from('.container .illu.flo2', {
