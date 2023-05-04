@@ -4,11 +4,12 @@
     max-width: 2000px;
     margin: 0 auto;
     background: #fff;
+    overflow-x: hidden;
 }
 .container .illu.flo1{
     position: absolute;
     top: 150px;
-    right: -40px;
+    right: -30px;
     width: 320px;
     height: 300px;
 }
@@ -18,6 +19,7 @@
     left: 0;
     width: 300px;
     height: 310px;
+    transform-origin: bottom left;
 }
 .container .illu.flo3{
     position: absolute;
@@ -25,13 +27,15 @@
     right: 400px;
     width: 70px;
     height: 160px;
+    transform-origin: top;
 }
 .container .illu.flo4{
     position: absolute;
     top: 500px;
-    right: -120px;
+    right: -100px;
     width: 210px;
     height: 200px;
+    transform-origin: right;
 }
 .sc-visual{
     padding-top: 95px;

@@ -14,19 +14,22 @@ $(function(){
         rotateY: 0,
         // width:`100%`,
         opacity: 1,
-        stagger: 0.43,
+        stagger: 0.5,
+        delay:1.3,
     })
     /**
      * @어바웃텍스트_나타남
      */
-    gsap.set('.sc-about .desc', {
-        opacity: 0
-    });
-    gsap.to('.sc-about .desc', {
+    gsap.fromTo('.sc-about .desc',{
+        opacity: 0,
+        y:30,
+        delay: 4.5,
+    },{
         opacity: 1,
-        delay: 1.7,
-        duration: .5
-    })
+        delay: 4.5,
+        duration: 1,
+        y:0,
+    });
     /**
      * @커서
      */
@@ -108,4 +111,53 @@ $(function(){
         var scrolled = (winScroll/height)*100;
         document.getElementById("indicator").style.width = scrolled + "%";
     };
+    /**
+     * @상단이미지_움직임
+     */
+    gsap.from('.container .illu.flo1', {
+        xPercent: 110,
+        duration: 1,
+        scale: (1.3),
+        delay: 3,
+    });
+    gsap.to('.container .illu.flo1', {
+        duration: 1,
+        xPercent: 0,
+        delay: 3,
+    });
+    gsap.from('.container .illu.flo2', {
+        rotate: 9,
+        duration: 1.5,
+        scale: (1.7),
+    });
+    gsap.from('.container .illu.flo3', {
+        duration: 1,
+        scale: (2),
+    });
+    gsap.to('.container .illu.flo3', {
+        duration: 2.5,
+        rotate: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "linear",
+        delay:1,
+    });
+    // gsap.to('.container .illu.flo1',{
+    //     rotate: 8,
+    //     repeat: -1,
+    //     duration: 3,
+    //     ease: "linear",
+    //     yoyo: true,
+    // })
+    gsap.from('.container .illu.flo4', {
+        // xPercent: 50,
+        rotate: -10,
+        duration: 1.5,
+        scale: (2),
+    });
+    gsap.to('.container .illu.flo4', {
+        // xPercent: 0,
+        rotate: 30,
+        duration: 1.5,
+    });
 })
