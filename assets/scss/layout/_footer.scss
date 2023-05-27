@@ -1,0 +1,67 @@
+.footer{
+    position: relative;
+    display: flex;
+    gap: 100px;
+    background: #ececec;
+    padding: 40px 70px 65px 60px;
+    max-width: 2090px;
+    margin: 0 auto;
+
+    .sc-contact{
+        display: flex;
+        flex-direction: column;
+
+        .headline{
+            display: block;
+            font-family: 'AllertaStencil';
+            font-weight: 700;
+            font-size: 80px;
+        }
+        .info-area{
+            padding-top: 32px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        .contact-area{
+            position: relative;
+            display: flex;
+            gap: 2vw;
+            padding-top: 40px;
+            font-family: 'Cardo';
+
+            a{
+                padding: 7px 17px;
+                border-radius: 50px;
+                background: #fff;
+                border-radius: 30px;
+                font-size: 13px;
+                font-weight: 700;
+                transition: .27s;
+                
+                span{
+                    font-size: 18px;
+                }
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .illu{
+        &.flo1{
+            position: absolute;
+            right: 55px;
+            bottom: 70px;
+            width: 240px;
+            height: 180px;
+        }
+    }
+    .copy{
+        position: absolute;
+        right: 30px;
+        bottom:30px;
+        font-size: 14px;
+        font-family: 'Cardo';
+    }
+}

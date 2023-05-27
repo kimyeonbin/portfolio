@@ -1,11 +1,3 @@
-.blind{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-}
 .cursor{
     position: fixed;
     top: 0;
@@ -19,9 +11,4 @@
     mix-blend-mode: difference;
     pointer-events: none;
     z-index: 1000;
-}
-.illu img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

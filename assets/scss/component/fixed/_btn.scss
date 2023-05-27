@@ -1,0 +1,35 @@
+.fix-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        width: 64px;
+        border: 1px solid #000;
+        background: #000;
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s;
+        transform: translateY(500px);
+
+        &::after{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 19px;
+            background: url('../images/ic-arrow-up.svg') no-repeat 0 0 / 16px 19px;
+            content: '';
+        }
+
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}

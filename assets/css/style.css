@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+@font-face {
+  font-family: "AllertaStencil";
+  src: url("../fonts/AllertaStencil-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HerrVonMuellerhoff";
+  src: url("../fonts/HerrVonMuellerhoff-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "FleurDeLeah";
+  src: url("../fonts/FleurDeLeah-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cako";
+  src: url("../fonts/Cako-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("../fonts/CinzelDecorative-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "ivy";
+  src: url("../fonts/IvyMode-Regular.woff") format("woff2");
+  font-weight: 400;
+}
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  cursor: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border-right: 1px solid #333;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  width: 90px;
+  z-index: 10;
+}
+.header .link-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  font-size: 24px;
+  text-align: center;
+  font-family: "HerrVonMuellerhoff";
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.header .link-portfolio .ic-logo {
+  display: block;
+  width: 56px;
+  height: 80px;
+  margin-right: -8px;
+  background: url("../images/ic-logo.png") no-repeat center/cover;
+}
+
+.gnb {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 0.7vw;
+  padding-right: 1.7vw;
+}
+.gnb .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+.gnb .nav-list button {
+  padding: 10px;
+  font-family: "Cardo";
+  font-style: italic;
+  color: #0064df;
+  font-size: 30px;
+}
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  background: #ececec;
+  padding: 40px 70px 65px 60px;
+  max-width: 2090px;
+  margin: 0 auto;
+}
+.footer .sc-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .sc-contact .headline {
+  display: block;
+  font-family: "AllertaStencil";
+  font-weight: 700;
+  font-size: 80px;
+}
+.footer .sc-contact .info-area {
+  padding-top: 32px;
+  font-size: 19px;
+  font-weight: 500;
+}
+.footer .sc-contact .contact-area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  padding-top: 40px;
+  font-family: "Cardo";
+}
+.footer .sc-contact .contact-area a {
+  padding: 7px 17px;
+  border-radius: 50px;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  -webkit-transition: 0.27s;
+  transition: 0.27s;
+}
+.footer .sc-contact .contact-area a span {
+  font-size: 18px;
+}
+.footer .sc-contact .contact-area a:hover {
+  background: #000;
+  color: #fff;
+}
+.footer .illu.flo1 {
+  position: absolute;
+  right: 55px;
+  bottom: 70px;
+  width: 240px;
+  height: 180px;
+}
+.footer .copy {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  font-family: "Cardo";
+}
+
+.fix-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fix-btn .btn-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 56px;
+  width: 64px;
+  border: 1px solid #000;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(500px);
+          transform: translateY(500px);
+}
+.fix-btn .btn-top::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16px;
+  height: 19px;
+  background: url("../images/ic-arrow-up.svg") no-repeat 0 0/16px 19px;
+  content: "";
+}
+.fix-btn .btn-top.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.progress-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background: transparent;
+}
+.progress-box .progress-bar {
+  height: 10px;
+  width: 0%;
+  background: #000;
+}
+
+.inner1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+}
+
+.inner2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container {
+  position: relative;
+  padding: 0 4vw;
+  max-width: 2000px;
+  margin: 0 auto;
+  background: #fff;
+  overflow-x: hidden;
+}
+.container .illu.flo1 {
+  position: absolute;
+  top: 150px;
+  right: -382px;
+  width: 320px;
+  height: 300px;
+}
+.container .illu.flo2 {
+  position: absolute;
+  top: 630px;
+  left: 0;
+  width: 300px;
+  height: 310px;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+.container .illu.flo3 {
+  position: absolute;
+  top: 0;
+  right: 400px;
+  width: 70px;
+  height: 160px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+.container .illu.flo4 {
+  position: absolute;
+  top: 500px;
+  right: -100px;
+  width: 210px;
+  height: 200px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.sc-visual {
+  padding-top: 95px;
+  padding-left: 50px;
+  font-family: "AllertaStencil";
+  font-size: 130px;
+  font-weight: 700;
+  color: #0064df;
+}
+.sc-visual .desc {
+  display: block;
+  letter-spacing: -3px;
+  margin-top: -15px;
+}
+.sc-visual .desc-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.sc-visual .desc-box .strong {
+  font-weight: 400;
+  font-family: "CinzelDecorative";
+  color: #0064df;
+  letter-spacing: -10px;
+}
+
+.sc-about {
+  padding: 80px 0 80px 60%;
+  margin-top: -10px;
+}
+.sc-about .desc {
+  font-size: 19px;
+  word-break: keep-all;
+  font-weight: 500;
+  color: #0064df;
+}
+.sc-about p + p {
+  margin-top: 15px;
+}
+
+.sc-work .headline {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0064df;
+  font-family: "Cako";
+}
+.sc-work .work-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 12vh;
+  gap: 50px;
+}
+.sc-work .work-item .thumb-area {
+  position: relative;
+  width: 43%;
+  max-width: 686px;
+  padding-bottom: 57%;
+  overflow: hidden;
+}
+.sc-work .work-item .thumb-area .link-more {
+  display: block;
+}
+.sc-work .work-item .thumb-area .link-more img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.sc-work .work-item .thumb-area .link-more img.money {
+  -o-object-position: right;
+     object-position: right;
+}
+.sc-work .work-item .thumb-area .link-more img.andar {
+  -o-object-position: top;
+     object-position: top;
+}
+.sc-work .work-item .thumb-area::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sc-work .work-item .thumb-area:hover::before {
+  background: rgba(0, 0, 0, 0.35);
+}
+.sc-work .work-item .thumb-area:hover img {
+  scale: 1.1;
+}
+.sc-work .work-item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 0;
+}
+.sc-work .work-item .info-area {
+  position: relative;
+  width: 55%;
+  max-width: 750px;
+}
+.sc-work .work-item .info-area .num {
+  font-size: 40px;
+  font-family: "FleurDeLeah";
+  color: #0064df;
+}
+.sc-work .work-item .info-area .title {
+  margin-bottom: 30px;
+  font-size: 105px;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -4.2px;
+  color: #0064df;
+  font-family: "ivy";
+  text-transform: uppercase;
+}
+.sc-work .work-item .info-area .desc-box {
+  width: 85%;
+  margin-bottom: 25px;
+  font-size: 19px;
+  color: #0064df;
+  font-weight: 500;
+  word-break: keep-all;
+}
+.sc-work .work-item .info-area .desc-box .desc + .desc {
+  padding-top: 13px;
+}
+.sc-work .work-item .info-area .keyword-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6vw;
+  margin-bottom: 25px;
+  font-family: "MaruBuri";
+  font-size: 16px;
+  color: #0064df;
+  text-transform: uppercase;
+}
+.sc-work .work-item .info-area .more-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-family: "Cardo";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.sc-work .work-item .info-area .more-box a {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.27s;
+  transition: 0.27s;
+  background: #0064df;
+  color: #fff;
+  border-radius: 50px;
+  padding: 9px 17px 7.5px 17px;
+}
+.sc-work .work-item .info-area .more-box a:hover {
+  background: #d6eeff;
+  color: #0064df;
+}

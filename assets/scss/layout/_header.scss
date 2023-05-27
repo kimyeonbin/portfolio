@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid #333;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    width: 90px;
+    z-index: 10;
+
+    .link-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        font-size: 24px;
+        text-align: center;
+        font-family: 'HerrVonMuellerhoff';
+        font-weight: 700;
+        transition: color .3s;
+
+        .ic-logo{
+            display: block;
+            width: 56px;
+            height: 80px;
+            margin-right: -8px;
+            background: url('../images/ic-logo.png') no-repeat center / cover;
+        }
+    }
+}
+.gnb{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: .7vw;
+    padding-right: 1.7vw;
+
+    .nav-list{
+        display: flex;
+        gap: 2vw;
+
+        button{
+            padding: 10px;
+            font-family: 'Cardo';
+            font-style: italic;
+            color: #0064df;
+            font-size: 30px;
+        }
+    }
+}

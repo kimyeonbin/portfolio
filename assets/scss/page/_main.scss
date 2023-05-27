@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+.inner1{
+    display: flex;
+    background: #fff;
+}
+.inner2{
+    flex: 1;
+}
+.container{
+    position: relative;
+    padding: 0 4vw;
+    max-width: 2000px;
+    margin: 0 auto;
+    background: #fff;
+    overflow-x: hidden;
+
+    .illu{
+        &.flo1{
+            position: absolute;
+            top: 150px;
+            right: -382px;
+            width: 320px;
+            height: 300px;
+        }
+        &.flo2{
+            position: absolute;
+            top: 630px;
+            left: 0;
+            width: 300px;
+            height: 310px;
+            transform-origin: bottom left;
+        }
+        &.flo3{
+            position: absolute;
+            top: 0;
+            right: 400px;
+            width: 70px;
+            height: 160px;
+            transform-origin: top;
+        }
+        &.flo4{
+            position: absolute;
+            top: 500px;
+            right: -100px;
+            width: 210px;
+            height: 200px;
+            transform-origin: right;
+        }
+    }
+}
+.sc-visual{
+    padding-top: 95px;
+    padding-left: 50px;
+    font-family: 'AllertaStencil';
+    font-size: 130px;
+    font-weight: 700;
+    color: #0064df;
+
+    .desc{
+        display: block;
+        letter-spacing: -3px;
+        margin-top: -15px;
+    }
+    .desc-box{
+        display: flex;
+        gap: 40px;
+
+        .strong{
+            font-weight: 400;
+            font-family: 'CinzelDecorative';
+            color: #0064df;
+            letter-spacing: -10px;
+        }
+    }
+}
+.sc-about{
+    padding: 80px 0 80px 60%;
+    margin-top: -10px;
+
+    .desc{
+        font-size: 19px;
+        word-break: keep-all; 
+        font-weight: 500;
+        color: #0064df;
+    }
+    p+p{
+        margin-top: 15px;
+    }
+}
+.sc-work{
+
+    .headline{
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #0064df;
+        font-family: 'Cako';
+    }
+    .work-item{
+        display: flex;
+        align-items: center;
+        padding-bottom: 12vh;
+        gap: 50px;
+
+        .thumb-area{
+            position: relative;
+            width: 43%;
+            max-width: 686px;
+            padding-bottom: 57%;
+            overflow: hidden;
+
+            .link-more{
+                display: block;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .4s;
+
+                    &.money{
+                        object-position: right;
+                    }
+                    &.andar{
+                        object-position: top;
+                    }
+                }
+            }
+            &::before{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background: rgba(0, 0, 0, .05);
+                z-index: 10;
+                content: '';
+                transition: .3s;
+            }
+            &:hover::before{
+                background: rgba(0, 0, 0, .35);
+            }
+            &:hover{
+                img{
+                    scale: 1.1;
+                }
+            }
+        }
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+            gap: 0;
+        }
+
+        .info-area{
+            position: relative;
+            width: 55%;
+            max-width: 750px;
+        
+            .num{
+                font-size: 40px;
+                font-family: 'FleurDeLeah';
+                color: #0064df;
+            }
+            .title{
+                margin-bottom: 30px;
+                font-size: 105px;
+                font-weight: 400;
+                line-height: .95;
+                letter-spacing: -4.2px;
+                color: #0064df;
+                font-family: 'ivy';
+                text-transform: uppercase;
+            }
+            .desc-box{
+                width: 85%;
+                margin-bottom: 25px;
+                font-size: 19px;
+                color: #0064df;
+                font-weight: 500;
+                word-break: keep-all;
+        
+                .desc+.desc{
+                    padding-top: 13px;
+                }
+            }
+            .keyword-box{
+                display: flex;
+                gap: 1.6vw;
+                margin-bottom: 25px;
+                font-family: 'MaruBuri';
+                font-size: 16px;
+                color: #0064df;
+                text-transform: uppercase;
+            }
+            .more-box{
+                display: flex;
+                gap: 15px;
+                font-family: 'Cardo';
+                font-size: 13px;
+                text-transform: uppercase;
+            
+                a{
+                    position: relative;
+                    display: inline-block;
+                    transition: .27s;
+                    background: #0064df;
+                    color: #fff;
+                    border-radius: 50px;
+                    padding: 9px 17px 7.5px 17px;
+            
+                    &:hover{
+                        background: #d6eeff;
+                        color: #0064df;
+                    }
+                }
+            }
+        }
+    }
+}
+
