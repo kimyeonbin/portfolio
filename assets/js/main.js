@@ -18,72 +18,29 @@ $(function(){
                 });
             });
             $('.gnb button').mouseover(function(){
-                gsap.to('.cursor',{scale:3})
+                gsap.to('.cursor',{scale:3});
             });
             $('.gnb button').mouseleave(function(){
-                gsap.to('.cursor',{scale:1})
+                gsap.to('.cursor',{scale:1});
             });
             $('.footer .contact-area a').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4})
+                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4});
             });
             $('.footer .contact-area a').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference", scale:1})
+                gsap.to('.cursor', {mixBlendMode:"difference", scale:1});
             });
             $('.sc-work .thumb-area').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal"})
+                gsap.to('.cursor', {mixBlendMode:"normal"});
             });
             $('.sc-work .thumb-area').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference"})
+                gsap.to('.cursor', {mixBlendMode:"difference"});
             });
             $('.sc-work .more-box a').mouseover(function(){
-                gsap.to('.cursor', {scale:0.4})
+                gsap.to('.cursor', {scale:0.4});
             });
             $('.sc-work .more-box a').mouseleave(function(){
-                gsap.to('.cursor', {scale:1})
+                gsap.to('.cursor', {scale:1});
             });
-            /**
-             * @상단이미지_움직임
-             */
-            // gsap.timeline({
-            //     paused: true,
-            // })
-            // .from('.container .illu.flo1', {
-            //     duration: 1,
-            //     scale: (1.3),
-            //     delay: 3,
-            // })
-            // .to('.container .illu.flo1', {
-            //     duration: 1,
-            //     right:-30,
-            //     delay: 3,
-            // })
-            // .from('.container .illu.flo2', {
-            //     rotate: 9,
-            //     duration: 1.5,
-            //     scale: (1.7),
-            // })
-            // .from('.container .illu.flo3', {
-            //     duration: 1,
-            //     scale: (2),
-            // })
-            // .to('.container .illu.flo3', {
-            //     duration: 2.5,
-            //     rotate: 10,
-            //     repeat: -1,
-            //     yoyo: true,
-            //     ease: "linear",
-            //     delay:1,
-            // })
-            // .from('.container .illu.flo4', {
-            //     rotate: -10,
-            //     duration: 1.5,
-            //     scale: (2),
-            // })
-            // .to('.container .illu.flo4', {
-            //     rotate: 30,
-            //     duration: 1.5,
-            // })
-            // .play();       
         },
 
 
@@ -100,28 +57,28 @@ $(function(){
                 });
             });
             $('.gnb button').mouseover(function(){
-                gsap.to('.cursor',{scale:3})
+                gsap.to('.cursor',{scale:3});
             });
             $('.gnb button').mouseleave(function(){
-                gsap.to('.cursor',{scale:1})
+                gsap.to('.cursor',{scale:1});
             });
             $('.footer .contact-area a').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4})
+                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4});
             });
             $('.footer .contact-area a').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference", scale:1})
+                gsap.to('.cursor', {mixBlendMode:"difference", scale:1});
             });
             $('.sc-work .thumb-area').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal"})
+                gsap.to('.cursor', {mixBlendMode:"normal"});
             });
             $('.sc-work .thumb-area').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference"})
+                gsap.to('.cursor', {mixBlendMode:"difference"});
             });
             $('.sc-work .more-box a').mouseover(function(){
-                gsap.to('.cursor', {scale:0.4})
+                gsap.to('.cursor', {scale:0.4});
             });
             $('.sc-work .more-box a').mouseleave(function(){
-                gsap.to('.cursor', {scale:1})
+                gsap.to('.cursor', {scale:1});
             });
         },
 
@@ -162,7 +119,7 @@ $(function(){
              * @어바웃텍스트_나타남
              */
             gsap.timeline({
-
+                paused: true,
             })
             .fromTo('.sc-about .desc',{
                 opacity: 0,
