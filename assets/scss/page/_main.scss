@@ -75,14 +75,8 @@
                 height: 195px;                
             }
             @include tablet{
-                // top: 630px;
-                // left: 10px;
-                // width: 150px;
-                // height: 155px;
                 display: none;
             }
-            // @include mobile{
-            // }
         }
         &.flo3{
             position: absolute;
