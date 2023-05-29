@@ -12,6 +12,16 @@
     width: 90px;
     z-index: 10;
 
+    @include desktop{
+        width: 80px;
+    }
+    @include tablet{
+        width: 70px;
+    }
+    @include mobile{
+        width: 0;
+    }
+
     .link-portfolio{
         display: flex;
         flex-direction: column;
@@ -24,12 +34,21 @@
         font-weight: 700;
         transition: color .3s;
 
+        @include mobile{
+            display: none;
+        }
+
         .ic-logo{
             display: block;
             width: 56px;
             height: 80px;
             margin-right: -8px;
             background: url('../images/ic-logo.png') no-repeat center / cover;
+
+            @include tablet{
+                width: 50px;
+                height: 75px;
+            }
         }
     }
 }
@@ -40,6 +59,12 @@
     padding-top: .7vw;
     padding-right: 1.7vw;
 
+    @include mobile{
+        margin-top: 10px;
+        margin-right: 10px;
+        padding-top: 0;
+        padding-right: 0;
+    }
     .nav-list{
         display: flex;
         gap: 2vw;
@@ -50,6 +75,10 @@
             font-style: italic;
             color: #0064df;
             font-size: 30px;
+
+            @include mobile{
+                font-size: 25px;
+            }
         }
     }
 }

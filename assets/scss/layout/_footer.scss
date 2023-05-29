@@ -1,35 +1,71 @@
 .footer{
     position: relative;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     display: flex;
-    gap: 100px;
     background: #ececec;
     padding: 40px 70px 65px 60px;
     max-width: 2090px;
-    margin: 0 auto;
+    
+    @include tablet{
+        padding-left: 40px;
+        padding-bottom: 75px;
+    }
+    @include mobile{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 95px;
+    }
 
     .sc-contact{
         display: flex;
         flex-direction: column;
+        flex-shrink: 1;
 
         .headline{
             display: block;
             font-family: 'AllertaStencil';
+            letter-spacing: -2px;
             font-weight: 700;
             font-size: 80px;
+
+            @include tablet{
+                font-size: 70px;
+            }
+            @include mobile{
+                font-size: 65px;
+            }
+            @media (max-width: 400px) {
+                font-size: 55px;
+            }
         }
         .info-area{
             padding-top: 32px;
             font-size: 19px;
             font-weight: 500;
+
+            @include tablet{
+                font-size: 17px;
+            }
         }
         .contact-area{
             position: relative;
             display: flex;
-            gap: 2vw;
+            gap: 10px 2vw;
             padding-top: 40px;
             font-family: 'Cardo';
-
+            flex-shrink: 1;
+            
+            @media (max-width: 1400px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+            }
             a{
+                flex-shrink: 1;
                 padding: 7px 17px;
                 border-radius: 50px;
                 background: #fff;
@@ -37,9 +73,16 @@
                 font-size: 13px;
                 font-weight: 700;
                 transition: .27s;
-                
-                span{
+
+                @include mobile{
+                    font-size: 11px;
+                }
+                strong{
                     font-size: 18px;
+
+                    @include mobile{
+                        font-size: 16px;
+                    }
                 }
                 &:hover{
                     background: #000;
@@ -55,13 +98,44 @@
             bottom: 70px;
             width: 240px;
             height: 180px;
+
+            @media (max-width: 1500px) {
+                right: 30px;
+                bottom: 60px;
+            }
+            @media (max-width: 1400px) {
+                width: 190px;
+                height: 150px;
+                object-fit: cover;
+            }
+            @media (max-width: 1300px) {
+                right: 20px;
+                bottom: 50px;
+                width: 175px;
+                height: 130px;
+            }
+            @include desktop{
+                bottom: 60px;
+            }
+            @include tablet{
+                right: 30px;
+            }
+            @include mobile{
+                display: none;
+                bottom: 60px;
+            }
         }
     }
     .copy{
         position: absolute;
         right: 30px;
-        bottom:30px;
+        bottom: 30px;
         font-size: 14px;
         font-family: 'Cardo';
+
+        @include mobile{
+            font-size: 13px;
+            left: 30px;
+        }
     }
 }

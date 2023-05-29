@@ -15,6 +15,9 @@
     background: #fff;
     overflow-x: hidden;
 
+    @include mobile{
+        padding: 0 30px;
+    }
     .illu{
         &.flo1{
             position: absolute;
@@ -22,6 +25,31 @@
             right: -382px;
             width: 320px;
             height: 300px;
+            object-fit: cover;
+
+            @media (max-width: 1600px) {
+                width: 280px;
+                height: 260px;
+            }
+            @media (max-width: 1500px) {
+                width: 260px;
+                height: 240px;
+            }
+            @include desktop{
+                top: 200px;
+                width: 200px;
+                height: 182px;
+            }
+            @include tablet{
+                top: 240px;
+                width: 180px;
+                height: 162px;
+            }
+            @include mobile{
+                top: 250px;
+                width: 140px;
+                height: 130px;
+            }
         }
         &.flo2{
             position: absolute;
@@ -30,6 +58,31 @@
             width: 300px;
             height: 310px;
             transform-origin: bottom left;
+            object-fit: cover;
+
+            @media (max-width: 1600px) {
+                width: 270px;
+                height: 275px;
+            }
+            @media (max-width: 1500px) {
+                width: 250px;
+                height: 255px;
+            }
+            @include desktop{
+                top: 670px;
+                left: 5px;
+                width: 190px;
+                height: 195px;                
+            }
+            @include tablet{
+                // top: 630px;
+                // left: 10px;
+                // width: 150px;
+                // height: 155px;
+                display: none;
+            }
+            // @include mobile{
+            // }
         }
         &.flo3{
             position: absolute;
@@ -38,6 +91,32 @@
             width: 70px;
             height: 160px;
             transform-origin: top;
+            object-fit: cover;
+
+            @media (max-width: 1600px) {
+                right: 365px;
+                width: 60px;
+                height: 150px;
+            }
+            @media (max-width: 1500px) {
+                left: 40px;
+                width: 55px;
+                height: 140px;
+            }
+            @include desktop{
+                width: 50px;
+                height: 100px;
+            }
+            @include tablet{
+                left: 30px;
+                width: 40px;
+                height: 90px;
+            }
+            @include mobile{
+                left: 20px;
+                width: 35px;
+                height: 80px;
+            }
         }
         &.flo4{
             position: absolute;
@@ -46,6 +125,35 @@
             width: 210px;
             height: 200px;
             transform-origin: right;
+            object-fit: cover;
+
+            @media (max-width: 1600px) {
+                width: 200px;
+                height: 190px;
+            }
+            @media (max-width: 1500px) {
+                right: -60px;
+                width: 180px;
+                height: 170px;
+            }
+            @include desktop{
+                top: 450px;
+                right: -70px;
+                width: 150px;
+                height: 150px;   
+            }
+            @include tablet{
+                top: 750px;
+                right: -50px;
+                width: 120px;
+                height: 120px;
+            }
+            @include mobile{
+                top: 600px;
+                right: -10px;
+                width: 105px;
+                height: 100px;
+            }
         }
     }
 }
@@ -57,20 +165,62 @@
     font-weight: 700;
     color: #0064df;
 
+    @media (max-width: 1500px) {
+        padding-left: 45px;
+        font-size: 9vw;
+    }
+    @media (max-width: 1400px) {
+        padding-left: 40px;
+    }
+    @include desktop{
+        padding-left: 35px;
+    }
+    @include tablet{
+        font-size: 10vw;
+    }
+    @include mobile{
+        padding-top: 120px;
+        padding-left: 0;
+        font-size: 12vw;
+    }
+    @media (max-width: 500px) {
+        font-size: 51px;
+    }
+    @media (max-width: 400px) {
+        font-size: 48px;
+    }
+    @media (max-width: 380px) {
+        font-size: 40px;
+    }
     .desc{
         display: block;
         letter-spacing: -3px;
         margin-top: -15px;
+
+        @include mobile{
+            letter-spacing: -2px;
+        }
     }
     .desc-box{
         display: flex;
-        gap: 40px;
+        flex-wrap: wrap;
+        gap: 0 40px;
 
+        @include tablet{
+            gap: 0 30px;
+        }
+        @include mobile{
+            gap: 0 20px;
+        }
         .strong{
             font-weight: 400;
             font-family: 'CinzelDecorative';
             color: #0064df;
             letter-spacing: -10px;
+
+            @include mobile{
+                letter-spacing: -5px;
+            }
         }
     }
 }
@@ -78,18 +228,28 @@
     padding: 80px 0 80px 60%;
     margin-top: -10px;
 
+    @include tablet{
+        padding-left: 300px;
+        margin-top: 0;
+    }
+    @include mobile{
+        padding: 80px 0 40px 0;
+    }
     .desc{
         font-size: 19px;
         word-break: keep-all; 
         font-weight: 500;
         color: #0064df;
+
+        @include tablet{
+            font-size: 17px;
+        }
     }
     p+p{
         margin-top: 15px;
     }
 }
 .sc-work{
-
     .headline{
         text-align: center;
         padding-top: 80px;
@@ -105,12 +265,27 @@
         padding-bottom: 12vh;
         gap: 50px;
 
+        @include tablet{
+            gap: 20px;
+        }
+        @include mobile{
+            flex-direction: column;
+            gap: 25px;
+            align-items: start;
+        }
+
         .thumb-area{
             position: relative;
             width: 43%;
             max-width: 686px;
             padding-bottom: 57%;
             overflow: hidden;
+
+            @include mobile{
+                width: 100%;
+                max-width: none;
+                padding-bottom: 130%;
+            }
 
             .link-more{
                 display: block;
@@ -154,17 +329,31 @@
         &:nth-child(2n){
             flex-direction: row-reverse;
             gap: 0;
+
+            @include mobile{
+                flex-direction: column;
+                gap: 25px;
+            }
         }
 
         .info-area{
             position: relative;
             width: 55%;
             max-width: 750px;
+
+            @include mobile{
+                width: 100%;
+
+            }
         
             .num{
                 font-size: 40px;
                 font-family: 'FleurDeLeah';
                 color: #0064df;
+
+                @include tablet{
+                    display: none;
+                }
             }
             .title{
                 margin-bottom: 30px;
@@ -175,6 +364,18 @@
                 color: #0064df;
                 font-family: 'ivy';
                 text-transform: uppercase;
+
+                @include tablet{
+                    font-size: 80px;
+                    margin-bottom: 10px;
+                }
+                @include mobile{
+                    font-size: 70px;
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 400px) {
+                    font-size: 60px;
+                }
             }
             .desc-box{
                 width: 85%;
@@ -183,19 +384,36 @@
                 color: #0064df;
                 font-weight: 500;
                 word-break: keep-all;
-        
+
+                @include tablet{
+                    font-size: 17px;
+                }
+                @include mobile{
+                    width: 100%;
+                }
+                .desc{
+                    br{
+                        display: none;
+                    }
+                }
                 .desc+.desc{
                     padding-top: 13px;
                 }
             }
             .keyword-box{
+                width: 85%;
                 display: flex;
-                gap: 1.6vw;
+                flex-wrap: wrap;
+                gap: 0 1.6vw;
                 margin-bottom: 25px;
                 font-family: 'MaruBuri';
                 font-size: 16px;
                 color: #0064df;
                 text-transform: uppercase;
+
+                @include tablet{
+                    font-size: 15px;
+                }
             }
             .more-box{
                 display: flex;
