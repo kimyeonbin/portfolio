@@ -532,7 +532,7 @@ body {
 }
 @media (max-width: 1024px) {
   .cursor {
-    display: none;
+    visibility: hidden;
   }
 }
 
