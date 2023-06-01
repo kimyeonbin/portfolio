@@ -915,7 +915,7 @@ body {
   .sc-work .work-item .thumb-area {
     width: 100%;
     max-width: none;
-    padding-bottom: 130%;
+    padding-bottom: 100%;
   }
 }
 .sc-work .work-item .thumb-area .link-more {
