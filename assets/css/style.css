@@ -377,6 +377,12 @@ body {
   background: #000;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .footer .sc-contact .contact-area a:hover {
+    background: #fff;
+    color: #000;
+  }
+}
 .footer .illu.flo1 {
   position: absolute;
   right: 55px;
@@ -889,7 +895,7 @@ body {
 }
 @media (max-width: 1024px) {
   .sc-work .work-item {
-    gap: 20px;
+    gap: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -954,8 +960,18 @@ body {
 .sc-work .work-item .thumb-area:hover::before {
   background: rgba(0, 0, 0, 0.35);
 }
+@media (max-width: 767px) {
+  .sc-work .work-item .thumb-area:hover::before {
+    background: transparent;
+  }
+}
 .sc-work .work-item .thumb-area:hover img {
   scale: 1.1;
+}
+@media (max-width: 767px) {
+  .sc-work .work-item .thumb-area:hover img {
+    scale: 1;
+  }
 }
 .sc-work .work-item:nth-child(2n) {
   -webkit-box-orient: horizontal;
@@ -1008,7 +1024,7 @@ body {
 @media (max-width: 1024px) {
   .sc-work .work-item .info-area .title {
     font-size: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -1087,4 +1103,10 @@ body {
 .sc-work .work-item .info-area .more-box a:hover {
   background: #d6eeff;
   color: #0064df;
+}
+@media (max-width: 767px) {
+  .sc-work .work-item .info-area .more-box a:hover {
+    background: #0064df;
+    color: #fff;
+  }
 }

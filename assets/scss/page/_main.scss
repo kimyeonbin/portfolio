@@ -260,7 +260,7 @@
         gap: 50px;
 
         @include tablet{
-            gap: 20px;
+            gap: 35px;
         }
         @include mobile{
             flex-direction: column;
@@ -313,10 +313,18 @@
             }
             &:hover::before{
                 background: rgba(0, 0, 0, .35);
+
+                @include mobile{
+                    background: transparent;
+                }
             }
             &:hover{
                 img{
                     scale: 1.1;
+
+                    @include mobile{
+                        scale: 1;
+                    }
                 }
             }
         }
@@ -363,7 +371,7 @@
 
                 @include tablet{
                     font-size: 80px;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
                 }
                 @include mobile{
                     font-size: 70px;
@@ -430,6 +438,11 @@
                     &:hover{
                         background: #d6eeff;
                         color: #0064df;
+
+                        @include mobile{
+                            background: #0064df;
+                            color: #fff;
+                        }
                     }
                 }
             }
