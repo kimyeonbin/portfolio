@@ -14,7 +14,7 @@ $(function(){
                 gsap.to('.cursor',{
                     x:e.clientX,
                     y:e.clientY,
-                    duration:.2,
+                    duration:0,
                 });
             });
             $('.gnb button').mouseover(function(){
