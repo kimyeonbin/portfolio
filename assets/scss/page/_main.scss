@@ -418,6 +418,9 @@
                 @include tablet{
                     font-size: 15px;
                 }
+                @include mobile{
+                    gap: 0 15px;
+                }
             }
             .more-box{
                 display: flex;

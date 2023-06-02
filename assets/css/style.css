@@ -1081,6 +1081,11 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 767px) {
+  .sc-work .work-item .info-area .keyword-box {
+    gap: 0 15px;
+  }
+}
 .sc-work .work-item .info-area .more-box {
   display: -webkit-box;
   display: -ms-flexbox;
