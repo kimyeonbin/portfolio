@@ -962,7 +962,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-work .work-item .thumb-area:hover::before {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.05);
   }
 }
 .sc-work .work-item .thumb-area:hover img {
