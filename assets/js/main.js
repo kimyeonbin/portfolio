@@ -6,80 +6,12 @@ $(function(){
     
     ScrollTrigger.matchMedia({
         "(min-width: 1281px)": function() {
-            /**
-             * @커서
-             */
-            $(window).mousemove(function(e){
-                e.preventDefault();
-                gsap.to('.cursor',{
-                    x:e.clientX,
-                    y:e.clientY,
-                    duration:0,
-                });
-            });
-            $('.gnb button').mouseover(function(){
-                gsap.to('.cursor',{scale:3});
-            });
-            $('.gnb button').mouseleave(function(){
-                gsap.to('.cursor',{scale:1});
-            });
-            $('.footer .contact-area a').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4});
-            });
-            $('.footer .contact-area a').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference", scale:1});
-            });
-            $('.sc-work .thumb-area').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal"});
-            });
-            $('.sc-work .thumb-area').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference"});
-            });
-            $('.sc-work .more-box a').mouseover(function(){
-                gsap.to('.cursor', {scale:0.4});
-            });
-            $('.sc-work .more-box a').mouseleave(function(){
-                gsap.to('.cursor', {scale:1});
-            });
+
         },
 
 
         "(min-width: 1025px) and (max-width: 1280px)": function() {
-            /**
-             * @커서
-             */
-            $(window).mousemove(function(e){
-                e.preventDefault();
-                gsap.to('.cursor',{
-                    x:e.clientX,
-                    y:e.clientY,
-                    duration:0,
-                });
-            });
-            $('.gnb button').mouseover(function(){
-                gsap.to('.cursor',{scale:3});
-            });
-            $('.gnb button').mouseleave(function(){
-                gsap.to('.cursor',{scale:1});
-            });
-            $('.footer .contact-area a').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4});
-            });
-            $('.footer .contact-area a').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference", scale:1});
-            });
-            $('.sc-work .thumb-area').mouseover(function(){
-                gsap.to('.cursor', {mixBlendMode:"normal"});
-            });
-            $('.sc-work .thumb-area').mouseleave(function(){
-                gsap.to('.cursor', {mixBlendMode:"difference"});
-            });
-            $('.sc-work .more-box a').mouseover(function(){
-                gsap.to('.cursor', {scale:0.4});
-            });
-            $('.sc-work .more-box a').mouseleave(function(){
-                gsap.to('.cursor', {scale:1});
-            });
+
         },
 
 
@@ -94,6 +26,41 @@ $(function(){
 
 
         "all": function() {
+            /**
+             * @커서
+             */
+            $(window).mousemove(function(e){
+                e.preventDefault();
+                gsap.to('.cursor',{
+                    x:e.clientX,
+                    y:e.clientY,
+                    duration:0,
+                });
+            });
+            $('.gnb button').mouseover(function(){
+                gsap.to('.cursor',{scale:3});
+            });
+            $('.gnb button').mouseleave(function(){
+                gsap.to('.cursor',{scale:1});
+            });
+            $('.footer .contact-area a').mouseover(function(){
+                gsap.to('.cursor', {mixBlendMode:"normal", scale:0.4});
+            });
+            $('.footer .contact-area a').mouseleave(function(){
+                gsap.to('.cursor', {mixBlendMode:"difference", scale:1});
+            });
+            $('.sc-work .thumb-area').mouseover(function(){
+                gsap.to('.cursor', {mixBlendMode:"normal"});
+            });
+            $('.sc-work .thumb-area').mouseleave(function(){
+                gsap.to('.cursor', {mixBlendMode:"difference"});
+            });
+            $('.sc-work .more-box a').mouseover(function(){
+                gsap.to('.cursor', {scale:0.4});
+            });
+            $('.sc-work .more-box a').mouseleave(function(){
+                gsap.to('.cursor', {scale:1});
+            });
             /**
              * @비주얼텍스트_나타남
              */
