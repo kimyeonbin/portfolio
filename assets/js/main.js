@@ -120,8 +120,8 @@ $(function(){
                 duration: 1.5,
             }); 
             /**
-            * @gnb_버튼
-            */
+             * @gnb_버튼
+             */
             $('.gnb button').click(function(){
     
                 target=$(this).data('target');
