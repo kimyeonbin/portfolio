@@ -5,26 +5,7 @@ $(function(){
     ScrollTrigger.saveStyles(".mobile, .desktop");
     
     ScrollTrigger.matchMedia({
-        "(min-width: 1281px)": function() {
-
-        },
-
-
-        "(min-width: 1025px) and (max-width: 1280px)": function() {
-
-        },
-
-
-        "(min-width: 768px) and (max-width: 1024px)": function() {
-
-         },
-
-
-        "(max-width: 767px)": function() {
-
-        },
-
-
+        
         "all": function() {
             /**
              * @커서
