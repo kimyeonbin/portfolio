@@ -7,12 +7,14 @@
     border-radius: 50%;
     background: #fff;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
     mix-blend-mode: difference;
     pointer-events: none;
     z-index: 1000;
+    opacity: 1;
+    visibility: visible;
 
     @include tablet{
+        opacity: 0;
         visibility: hidden;
     }
 }
