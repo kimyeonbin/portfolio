@@ -38,8 +38,9 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
+::-webkit-scrollbar{
+    display: none; /* Chrome, Safari, Opera*/
+}
 body{
     background: #f7f7f7;
     font-family: 'Pretendard';
@@ -50,7 +51,4 @@ body{
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-}
-::-webkit-scrollbar{
-    display: none; /* Chrome, Safari, Opera*/
 }
