@@ -521,29 +521,6 @@ body {
           transform: translateY(0);
 }
 
-.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #fff;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 1;
-  visibility: visible;
-}
-@media (max-width: 1024px) {
-  .cursor {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 .progress-box {
   position: fixed;
   bottom: 0;
