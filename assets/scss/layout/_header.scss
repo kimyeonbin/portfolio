@@ -21,7 +21,6 @@
     @include mobile{
         width: 0;
     }
-
     .link-portfolio{
         display: flex;
         flex-direction: column;
@@ -37,7 +36,6 @@
         @include mobile{
             display: none;
         }
-
         .ic-logo{
             display: block;
             width: 56px;
