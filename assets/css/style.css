@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*반응형 화면 크기*/
 @font-face {
   font-family: "AllertaStencil";
   src: url("../fonts/AllertaStencil-Regular.woff2") format("woff2");
