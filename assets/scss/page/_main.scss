@@ -391,11 +391,6 @@
                 @include mobile{
                     width: 100%;
                 }
-                .desc{
-                    br{
-                        display: none;
-                    }
-                }
                 .desc+.desc{
                     padding-top: 13px;
                 }

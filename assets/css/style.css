@@ -1033,9 +1033,6 @@ body {
     width: 100%;
   }
 }
-.sc-work .work-item .info-area .desc-box .desc br {
-  display: none;
-}
 .sc-work .work-item .info-area .desc-box .desc + .desc {
   padding-top: 13px;
 }
