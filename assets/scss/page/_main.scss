@@ -379,7 +379,7 @@
             }
             .desc-box{
                 width: 85%;
-                margin-bottom: 25px;
+                margin-bottom: 30px;
                 font-size: 19px;
                 color: #0064df;
                 font-weight: 500;
@@ -390,6 +390,13 @@
                 }
                 @include mobile{
                     width: 100%;
+                }
+                .desc-per{
+                    color: #06336b;
+                    font-size: 24px;
+                    font-family: 'Maruburi';
+                    font-weight: bold;
+                    margin-top: 17px;
                 }
                 .desc+.desc{
                     padding-top: 13px;
